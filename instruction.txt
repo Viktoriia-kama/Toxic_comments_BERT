@@ -2,10 +2,10 @@
 В папці є папка Instruction, у ній файл docker-compose.yml , покладіть в окрему папку на свій компьютер, 
 зайдіть у неї через cmd, виконайте команди з instruction.txt. 
 
-docker pull olexandryakovenko/tt3_project-streamlit-app:latest
+docker pull olexandryakovenko/tt3_project-with-data:latest
 docker-compose up
 
 це запустити через браузер, у мене був chrome.
 http://localhost:8501/
 
-скопіювати вміст папок model та data до папки з проектом.
+вже не треба (скопіювати вміст папок model та data до папки з проектом).

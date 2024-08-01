@@ -78,4 +78,28 @@ test
 docker pull olexandryakovenko/tt3_project-streamlit-app:latest
 docker-compose up
 
+docker pull my_image:latest
+
+
+
+==========
+docker build -t tt3_project-with-data .
+
+
+docker tag tt3_project-with-data:latest olexandryakovenko/tt3_project-with-data:latest
+docker push olexandryakovenko/tt3_project-with-data:latest
+
+docker tag tt3_project-with-data:latest olexandryakovenko/tt3_project-with-data:latest
+docker push olexandryakovenko/tt3_project-with-data:latest
+
+docker pull olexandryakovenko/tt3_project-with-data:latest
+
+services:
+  tt3_project-streamlit-app:
+    image: olexandryakovenko/tt3_project-streamlit-app:latest
+    ports:
+      - "8501:8501"  # Маппінг портів, якщо ваш додаток використовує порт 8501
+    volumes:
+      - ./data:/app/data  # Маппінг директорій, якщо потрібно зберігати дані
+      - ./model:/app/model  # Маппінг директорій, якщо потрібно зберігати дані      
 

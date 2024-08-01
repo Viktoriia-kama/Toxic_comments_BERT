@@ -1,6 +1,6 @@
 services:
-  tt3_project-with-data2:
-    image: olexandryakovenko/tt3_project-with-data2:latest
+  tt3_project-with-data:
+    image: olexandryakovenko/tt3_project-with-data:latest
     ports:
       - "8501:8501"  # Маппінг портів, якщо ваш додаток використовує порт 8501
     #volumes:
